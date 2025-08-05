@@ -1,40 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
-
+# Next Todo App
+A modern and minimal Todo application built using **Next.js** and **Tailwind CSS**. This project demonstrates the use of React Hooks, Next.js routing, and basic CRUD operations for managing a list of tasks.
+## Features
+- Add, edit, update, and delete todos
+- Store todos locally using `localStorage`
+- Dark/light mode toggle (optional enhancement)
+- Instant updates with React state
+- Simple and responsive UI with Tailwind CSS
+## Tech Stack
+| Technology | Description |
+|------------|-------------|
+| [Next.js](https://nextjs.org/) | React framework for production |
+| [React](https://reactjs.org/) | Frontend JavaScript library |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first CSS framework |
+| [Vercel](https://vercel.com/) | Optional – for easy deployment |
+## Project Structure
+````
+next-todo-app/
+├── pages/
+│ ├── index.js # Main todo interface
+│ └── _app.js # Global styles
+├── components/ # Reusable React components
+│ └── TodoItem.js
+├── styles/
+│ └── globals.css
+├── public/
+│ └── favicon.ico
+├── README.md
+└── package.json
+````
 ## Getting Started
-
-First, run the development server:
-
+### 1. Clone the repo
+```bash
+   git clone https://github.com/YOUR_USERNAME/next-todo-app.git
+   cd next-todo-app
+```
+### 2. Install dependencies
+```bash
+npm install
+```
+### 3. Run the app
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+### 4. Open in Browser
+Visit: http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Create a `.env.local` file in the root directory
+```env
+   MONGODB_URI=your_mongodb_connection_string_here
+```
+### 6. Connect to MongoDB
+Ensure your MongoDB connection string is correct (you can use MongoDB Atlas or a local MongoDB server).
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Author
+Faiza Maqsood 
+[@FaizaMaqsood](https://github.com/FaizaMaqsood)
+## License
+This project is licensed under the MIT License.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
