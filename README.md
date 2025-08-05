@@ -54,7 +54,7 @@ Ensure your MongoDB connection string is correct (you can use MongoDB Atlas or a
 
 ## Author
 Faiza Maqsood 
-[@FaizaMaqsood](https://github.com/FaizaMaqsood)
+[@Github](https://github.com/FaizaMaqsood)
 ## License
 This project is licensed under the MIT License.
 
